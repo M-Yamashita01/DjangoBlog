@@ -11,6 +11,7 @@ jobs:
        sudo pip install pipenv
        pipenv install
        pipenv install django
+       pipenv install PyMySQL
        pipenv run python manage.py test
    - store_test_results:
       path: test-results
