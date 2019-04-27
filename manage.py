@@ -2,12 +2,10 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-import pymysql
 
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'web_project.settings')
-    pymysql.install_as_MySQLdb()
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
