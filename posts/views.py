@@ -10,5 +10,4 @@ def home(request):
 
 # def index(request):
     # posts = Post.objects.order_by('-published')
-    # 
     # return render(request, "posts/index.html", {"num": range(10)},)
