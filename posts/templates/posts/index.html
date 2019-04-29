@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+<head> 
+    <title>投稿一覧</title>   
+</head>
+<body>
+    <h3>Welcome to Yamashii Blog</h3>
+
+    <h4>最新の投稿</h4>
+    <p>
+    {% for post in posts.all %}
+        {{ post.title }}
+        <br/>
+        {{ post.published}}
+        <br/>
+        <img src="{{ post.image.url}}" width="100", height="100"/>
+        <br/>
+        {{ post.summary }}
+        <br/><br/>     
+    {% endfor %}
+    </p>
+</body>
+</html>
