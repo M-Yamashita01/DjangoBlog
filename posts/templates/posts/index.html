@@ -4,6 +4,18 @@
     <title>投稿一覧</title>   
 </head>
 <body>
-    <h3>投稿一覧のページ</h3>
+    <h3>Welcome to Yamashii Blog</h3>
+
+    <h4>最新の投稿</h4>
+    <p>
+    {% for post in posts.all %}
+        {{ post.title }}
+        <br/>
+        {{ post.published}}
+        <br/>
+        {{ post.summary }}
+        <br/>        
+    {% endfor %}
+    </p>
 </body>
 </html>
